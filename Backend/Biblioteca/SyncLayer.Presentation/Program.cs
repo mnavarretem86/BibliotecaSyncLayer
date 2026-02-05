@@ -25,6 +25,11 @@ builder.Services.AddScoped<IPersonaRepository, PersonaRepository>();
 builder.Services.AddScoped<PersonaServices>();
 
 
+builder.Services.AddScoped<ILibroRepository, LibroRepository>();
+builder.Services.AddScoped<LibroServices>();
+
+
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

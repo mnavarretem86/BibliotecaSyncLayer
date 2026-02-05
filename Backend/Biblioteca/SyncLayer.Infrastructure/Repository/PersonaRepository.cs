@@ -12,140 +12,108 @@ namespace SyncLayer.Infrastructure.Repository
     public class PersonaRepository : IPersonaRepository
     {
         private readonly DBConnectionFactory _dbConnectionFactory;
+        private const string StoreProcedure = "USP_Persona";
 
         public PersonaRepository(DBConnectionFactory dbConnectionFactory)
         {
             _dbConnectionFactory = dbConnectionFactory;
         }
 
-
- 
         public async Task CrearPersonaAsync(Persona persona)
         {
             using var con = _dbConnectionFactory.CreateConnection();
             await con.OpenAsync();
+            using var cmd = CreateCommand(con, 1); 
+            AddParameters(cmd, persona);
 
-            using (SqlCommand cmd = new SqlCommand("USP_Persona", con))
-            {
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@Operacion", 1);
-                cmd.Parameters.AddWithValue("@PrimerNombre", persona.PrimerNombre);
-                cmd.Parameters.AddWithValue("@SegundoNombre", (object?)persona.SegundoNombre ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@PrimerApellido", persona.PrimerApellido);
-                cmd.Parameters.AddWithValue("@SegundoApellido", (object?)persona.SegundoApellido ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@DNI", persona.DNI);
-                cmd.Parameters.AddWithValue("@Genero", (object?)persona.Genero ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@FechaNacimiento", persona.FechaNacimiento);
-                cmd.Parameters.AddWithValue("@Email", persona.Email);
-                cmd.Parameters.AddWithValue("@Telefono", (object?)persona.Telefono ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@Direccion", (object?)persona.Direccion ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@TipoPersonaID", persona.TipoPersonaID);
-
-                await cmd.ExecuteNonQueryAsync();
-            }
+            await cmd.ExecuteNonQueryAsync();
         }
 
         public async Task ActualizarPersonaAsync(Persona persona)
         {
             using var con = _dbConnectionFactory.CreateConnection();
             await con.OpenAsync();
+            using var cmd = CreateCommand(con, 2); 
+            cmd.Parameters.Add("@PersonaID", SqlDbType.Int).Value = persona.PersonaID;
+            AddParameters(cmd, persona);
 
-            using (SqlCommand cmd = new SqlCommand("USP_Persona", con))
-            {
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@Operacion", 2);
-                cmd.Parameters.AddWithValue("@PersonaID", persona.PersonaID);
-                cmd.Parameters.AddWithValue("@PrimerNombre", (object?)persona.PrimerNombre ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@SegundoNombre", (object?)persona.SegundoNombre ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@PrimerApellido", (object?)persona.PrimerApellido ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@SegundoApellido", (object?)persona.SegundoApellido ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@Genero", (object?)persona.Genero ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@FechaNacimiento", persona.FechaNacimiento);
-                cmd.Parameters.AddWithValue("@Email", (object?)persona.Email ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@Telefono", (object?)persona.Telefono ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@Direccion", (object?)persona.Direccion ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@TipoPersonaID", persona.TipoPersonaID);
-
-                await cmd.ExecuteNonQueryAsync();
-            }
+            await cmd.ExecuteNonQueryAsync();
         }
+
         public async Task<Persona?> ObtenerPersonaPorIdAsync(int personaId)
         {
             using var con = _dbConnectionFactory.CreateConnection();
             await con.OpenAsync();
+            using var cmd = CreateCommand(con, 3); 
+            cmd.Parameters.Add("@PersonaID", SqlDbType.Int).Value = personaId;
 
-            using (SqlCommand cmd = new SqlCommand("USP_Persona", con))
+            using var dr = await cmd.ExecuteReaderAsync();
+            if (await dr.ReadAsync())
             {
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Operacion", 3);
-                cmd.Parameters.AddWithValue("@PersonaID", personaId);
-
-                using (SqlDataReader dr = await cmd.ExecuteReaderAsync())
-                {
-                    if (await dr.ReadAsync())
-                    {
-                        return new Persona
-                        {
-                            PersonaID = Convert.ToInt32(dr["PersonaID"]),
-                            PrimerNombre = dr["PrimerNombre"].ToString(),
-                            SegundoNombre = dr["SegundoNombre"]?.ToString(),
-                            PrimerApellido = dr["PrimerApellido"].ToString(),
-                            SegundoApellido = dr["SegundoApellido"]?.ToString(),
-                            DNI = dr["DNI"].ToString(),
-                            Genero = dr["Genero"]?.ToString(),
-                            FechaNacimiento = Convert.ToDateTime(dr["FechaNacimiento"]),
-                            Email = dr["Email"].ToString(),
-                            Telefono = dr["Telefono"]?.ToString(),
-                            Direccion = dr["Direccion"]?.ToString(),
-                            TipoPersonaID = Convert.ToInt32(dr["TipoPersonaID"])
-                        };
-                    }
-                }
+                return await MapToPersona(dr);
             }
-
             return null;
         }
 
-
-  
         public async Task<IEnumerable<Persona>> ListarPersonasAsync()
         {
             var lista = new List<Persona>();
-
             using var con = _dbConnectionFactory.CreateConnection();
             await con.OpenAsync();
+            using var cmd = CreateCommand(con, 4); 
 
-            using (SqlCommand cmd = new SqlCommand("USP_Persona", con))
+            using var dr = await cmd.ExecuteReaderAsync();
+            while (await dr.ReadAsync())
             {
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Operacion", 4);
-
-                using (SqlDataReader dr = await cmd.ExecuteReaderAsync())
-                {
-                    while (await dr.ReadAsync())
-                    {
-                        lista.Add(new Persona
-                        {
-                            PersonaID = Convert.ToInt32(dr["PersonaID"]),
-                            PrimerNombre = dr["PrimerNombre"].ToString(),
-                            SegundoNombre = dr["SegundoNombre"]?.ToString(),
-                            PrimerApellido = dr["PrimerApellido"].ToString(),
-                            SegundoApellido = dr["SegundoApellido"]?.ToString(),
-                            DNI = dr["DNI"].ToString(),
-                            Genero = dr["Genero"]?.ToString(),
-                            FechaNacimiento = Convert.ToDateTime(dr["FechaNacimiento"]),
-                            Email = dr["Email"].ToString(),
-                            Telefono = dr["Telefono"]?.ToString(),
-                            Direccion = dr["Direccion"]?.ToString(),
-                            TipoPersonaID = Convert.ToInt32(dr["TipoPersonaID"])
-                        });
-                    }
-                }
+                lista.Add(await MapToPersona(dr));
             }
-
             return lista;
+        }
+
+
+        private SqlCommand CreateCommand(SqlConnection con, int operacion)
+        {
+            var cmd = new SqlCommand(StoreProcedure, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Operacion", SqlDbType.Int).Value = operacion;
+            return cmd;
+        }
+
+
+        private void AddParameters(SqlCommand cmd, Persona p)
+        {
+            cmd.Parameters.Add("@PrimerNombre", SqlDbType.NVarChar, 100).Value = p.PrimerNombre;
+            cmd.Parameters.Add("@SegundoNombre", SqlDbType.NVarChar, 100).Value = (object?)p.SegundoNombre ?? DBNull.Value;
+            cmd.Parameters.Add("@PrimerApellido", SqlDbType.NVarChar, 100).Value = p.PrimerApellido;
+            cmd.Parameters.Add("@SegundoApellido", SqlDbType.NVarChar, 100).Value = (object?)p.SegundoApellido ?? DBNull.Value;
+            cmd.Parameters.Add("@DNI", SqlDbType.VarChar, 20).Value = p.DNI;
+            cmd.Parameters.Add("@Genero", SqlDbType.Char, 1).Value = (object?)p.Genero ?? DBNull.Value;
+            cmd.Parameters.Add("@FechaNacimiento", SqlDbType.DateTime).Value = p.FechaNacimiento;
+            cmd.Parameters.Add("@Email", SqlDbType.NVarChar, 100).Value = p.Email;
+            cmd.Parameters.Add("@Telefono", SqlDbType.VarChar, 20).Value = (object?)p.Telefono ?? DBNull.Value;
+            cmd.Parameters.Add("@Direccion", SqlDbType.NVarChar, 255).Value = (object?)p.Direccion ?? DBNull.Value;
+            cmd.Parameters.Add("@TipoPersonaID", SqlDbType.Int).Value = p.TipoPersonaID;
+        }
+
+
+
+        private async Task<Persona> MapToPersona(SqlDataReader dr)
+        {
+            return new Persona
+            {
+                PersonaID = await dr.GetFieldValueAsync<int>(dr.GetOrdinal("PersonaID")),
+                PrimerNombre = dr["PrimerNombre"].ToString() ?? string.Empty,
+                SegundoNombre = dr["SegundoNombre"] as string,
+                PrimerApellido = dr["PrimerApellido"].ToString() ?? string.Empty,
+                SegundoApellido = dr["SegundoApellido"] as string,
+                DNI = dr["DNI"].ToString() ?? string.Empty,
+                Genero = dr["Genero"] as string,
+                FechaNacimiento = await dr.GetFieldValueAsync<DateTime>(dr.GetOrdinal("FechaNacimiento")),
+                Email = dr["Email"].ToString() ?? string.Empty,
+                Telefono = dr["Telefono"] as string,
+                Direccion = dr["Direccion"] as string,
+                TipoPersonaID = await dr.GetFieldValueAsync<int>(dr.GetOrdinal("TipoPersonaID"))
+            };
         }
     }
 }

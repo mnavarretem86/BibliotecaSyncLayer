@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "SyncLayer.Presentation.Controllers.LibroController",
+    "Method": "ListarLibros",
+    "RelativePath": "api/Libro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SyncLayer.Presentation.Controllers.PersonasController",
     "Method": "ListarPersonas",
     "RelativePath": "api/Personas",

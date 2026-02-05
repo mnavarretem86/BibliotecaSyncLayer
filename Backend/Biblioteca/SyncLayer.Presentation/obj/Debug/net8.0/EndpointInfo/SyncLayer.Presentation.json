@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Libro": {
+      "get": {
+        "tags": [
+          "Libro"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Personas": {
       "get": {
         "tags": [
