@@ -1,0 +1,6 @@
+@SyncLayer.Presentation_HostAddress = http://localhost:5037
+
+GET {{SyncLayer.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
