@@ -1,4 +1,7 @@
+using SyncLayer.Application.Interface;
+using SyncLayer.Application.Services;
 using SyncLayer.Infrastructure.DataBase;
+using SyncLayer.Infrastructure.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +19,11 @@ if (string.IsNullOrWhiteSpace(connectionStrings))
     throw new InvalidOperationException("La Cadena no puede venir Vacia");
 }
 builder.Services.AddSingleton(new DBConnectionFactory(connectionStrings));
+
+
+builder.Services.AddScoped<IPersonaRepository, PersonaRepository>();
+builder.Services.AddScoped<PersonaServices>();
+
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

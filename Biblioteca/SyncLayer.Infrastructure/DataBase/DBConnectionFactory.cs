@@ -21,9 +21,10 @@ namespace SyncLayer.Infrastructure.DataBase
             _connectionString = connectionString;
         }
 
-        public SqlConnection CateConnection() {
+        public SqlConnection CreateConnection() {
 
             return new SqlConnection(_connectionString);        
         }
+
     }
 }
