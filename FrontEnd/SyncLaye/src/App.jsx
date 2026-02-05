@@ -1,71 +1,51 @@
-import { useState } from 'react'
-import { BookOpen, Mail, Lock, ChevronRight } from 'lucide-react'
+import { Construction, Sparkles, Wind } from 'lucide-react'
 
 function App() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-
-  const handleLogin = (e) => {
-    e.preventDefault()
-    console.log('Iniciando sesión en BibliotecaDB...', { email, password })
-  }
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900 p-4">
-      <div className="w-full max-w-md bg-white/10 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/10 text-white">
-        
-        <div className="flex flex-col items-center mb-10">
-          <div className="bg-indigo-600 p-4 rounded-2xl shadow-lg shadow-indigo-500/30 mb-4">
-            <BookOpen size={40} className="text-white" />
-          </div>
-          <h1 className="text-3xl font-bold tracking-tight">Biblioteca</h1>
-          <p className="text-slate-400 text-sm mt-2 font-medium">Gestión de Préstamos y Catálogo</p>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-slate-900 text-white p-4">
+      
+      <div className="flex flex-col items-center text-center gap-6 flex-1 justify-center">
+
+        <div className="bg-indigo-600/20 p-6 rounded-3xl shadow-lg shadow-indigo-500/20">
+          <Construction size={64} className="text-indigo-400" />
         </div>
 
-        <form onSubmit={handleLogin} className="space-y-5">
-          <div className="space-y-2">
-            <label className="text-xs uppercase tracking-widest text-slate-400 font-bold ml-1">Correo Electrónico</label>
-            <div className="relative group">
-              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-indigo-400 transition-colors" size={20} />
-              <input 
-                type="email" 
-                placeholder="ejemplo@biblioteca.com"
-                className="w-full bg-slate-800/50 border border-white/5 rounded-xl py-3.5 pl-12 pr-4 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:bg-slate-800 transition-all"
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-          </div>
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+          En Construcción
+        </h1>
 
-          <div className="space-y-2">
-            <label className="text-xs uppercase tracking-widest text-slate-400 font-bold ml-1">Contraseña</label>
-            <div className="relative group">
-              <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-indigo-400 transition-colors" size={20} />
-              <input 
-                type="password" 
-                placeholder="••••••••"
-                className="w-full bg-slate-800/50 border border-white/5 rounded-xl py-3.5 pl-12 pr-4 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:bg-slate-800 transition-all"
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
-          </div>
+        <h2 className="text-2xl md:text-3xl font-bold text-indigo-400">
+          Biblioteca Avanzada SyncLayer
+        </h2>
 
-          <button
-            type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-500 active:scale-[0.98] transition-all py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 mt-4 shadow-xl shadow-indigo-600/20"
-          >
-            Ingresar al Sistema
-            <ChevronRight size={20} />
-          </button>
-        </form>
-
-        <footer className="mt-8 text-center text-sm text-slate-500">
-          <p>&copy; 2026 SyncLaye - Panel de Administración</p>
-        </footer>
+        <p className="text-slate-400 text-sm md:text-base">
+          Creada con <span className="font-semibold text-white">Vite + React + TailwindCSS</span>
+        </p>
       </div>
+
+      <footer className="w-full max-w-2xl pb-8">
+        <div className="flex items-center justify-center gap-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-6 py-4">
+
+          <div className="flex items-center gap-2 text-sky-400 font-semibold">
+            <Wind size={20} />
+            TailwindCSS
+          </div>
+
+          <div className="w-px h-6 bg-white/10" />
+
+          <div className="flex items-center gap-2 text-yellow-400 font-semibold">
+            <Sparkles size={20} />
+            Lucide React
+          </div>
+
+        </div>
+
+        <p className="text-center text-xs text-slate-500 mt-3">
+        ❤️ “Desarrollado con dedicación por estudiantes de la Universidad de Managua.”
+        </p>
+      </footer>
+
     </div>
   )
 }
-
 export default App
