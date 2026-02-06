@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
@@ -27,20 +28,56 @@ namespace SyncLayer.Infrastructure.Repository
             _dBConnectionFactory = dbConnectionFactory;
         }
 
-        public Task CrearLibroAsync(Libro libro)
+        public async Task CrearLibroAsync(Libro libro)
         {
-            throw new NotImplementedException();
+            using var con = _dBConnectionFactory.CreateConnection();
+            await con.OpenAsync();
+
+            using var cmd = CreateCommand(con, 1); 
+            AddParameters(cmd, libro);
+
+            await cmd.ExecuteNonQueryAsync();
+        }
+        
+        
+
+        public async Task ActualizarLibroAsync(Libro libro)
+        {
+            using var con = _dBConnectionFactory.CreateConnection();
+            await con.OpenAsync();
+
+            using var cmd = CreateCommand(con, 2); 
+            AddParameters(cmd, libro);
+
+            await cmd.ExecuteNonQueryAsync();
         }
 
-        public Task ActualizarLibroAsync(Libro libro)
-        {
-            throw new NotImplementedException();
-        }
+        //Listar Libro por ID
 
-        public Task<Libro?> ObtenerLibroPorIdAsync(int libroId)
+        public async Task<Libro?> ObtenerLibroPorIdAsync(int libroId)
         {
-            throw new NotImplementedException();
+
+            using var con = _dBConnectionFactory.CreateConnection();
+            await con.OpenAsync();
+            using var cmd = CreateCommand(con, 3);
+            cmd.Parameters.Add("@LibroID", SqlDbType.Int).Value = libroId;
+
+            using var dr = await cmd.ExecuteReaderAsync();
+            {
+                if (await dr.ReadAsync())
+                {
+
+                    return await MapToLibro(dr);
+
+                }
+                return null;
+
+            }
         }
+        
+
+        //Listar libros
+
 
         public async Task<IEnumerable<Libro>> ListarLibrosAsync()
         {
