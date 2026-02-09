@@ -52,7 +52,6 @@ namespace SyncLayer.Infrastructure.Repository
             await cmd.ExecuteNonQueryAsync();
         }
 
-        //Listar Libro por ID
 
         public async Task<Libro?> ObtenerLibroPorIdAsync(int libroId)
         {
@@ -75,9 +74,6 @@ namespace SyncLayer.Infrastructure.Repository
             }
         }
         
-
-        //Listar libros
-
 
         public async Task<IEnumerable<Libro>> ListarLibrosAsync()
         {

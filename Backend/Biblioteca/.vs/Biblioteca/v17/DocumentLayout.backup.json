@@ -3,24 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|solutionrelative:synclayer.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.presentation\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|solutionrelative:synclayer.presentation\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.presentation\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|solutionrelative:synclayer.presentation\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|solutionrelative:synclayer.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.infrastructure\\repository\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|solutionrelative:synclayer.infrastructure\\repository\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.infrastructure\\repository\\librorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|solutionrelative:synclayer.infrastructure\\repository\\librorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.infrastructure\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|solutionrelative:synclayer.infrastructure\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.infrastructure\\database\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|solutionrelative:synclayer.infrastructure\\database\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{585607DF-D201-48C2-B267-213666120EEC}|SyncLayer.Domain\\SyncLayer.Domain.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{585607DF-D201-48C2-B267-213666120EEC}|SyncLayer.Domain\\SyncLayer.Domain.csproj|solutionrelative:synclayer.domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{585607DF-D201-48C2-B267-213666120EEC}|SyncLayer.Domain\\SyncLayer.Domain.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.domain\\entities\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{585607DF-D201-48C2-B267-213666120EEC}|SyncLayer.Domain\\SyncLayer.Domain.csproj|solutionrelative:synclayer.domain\\entities\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\services\\personaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\services\\personaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\services\\libroservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\services\\libroservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\dtos\\librodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\dtos\\librodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\interface\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\interface\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\interface\\ilibrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\interface\\ilibrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\interface\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\interface\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\dtos\\personadtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\dtos\\personadtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.presentation\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBF40A17-A29B-46F4-ACEF-C4FBEA36A6F5}|SyncLayer.Presentation\\SyncLayer.Presentation.csproj|solutionrelative:synclayer.presentation\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\dtos\\librodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\dtos\\librodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +90,266 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PersonaDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\PersonaDTOs.cs",
-              "RelativeDocumentMoniker": "SyncLayer.Application\\DTOs\\PersonaDTOs.cs",
-              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\PersonaDTOs.cs",
-              "RelativeToolTip": "SyncLayer.Application\\DTOs\\PersonaDTOs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Presentation\\Program.cs",
+              "RelativeToolTip": "SyncLayer.Presentation\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T15:28:48.48Z",
+              "WhenOpened": "2026-02-09T17:06:51.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LibroServices.cs",
-              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Services\\LibroServices.cs",
-              "RelativeDocumentMoniker": "SyncLayer.Application\\Services\\LibroServices.cs",
-              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Services\\LibroServices.cs",
-              "RelativeToolTip": "SyncLayer.Application\\Services\\LibroServices.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAtwDIAAAAeAAAAAAAAAA==",
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Presentation\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Presentation\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Presentation\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "SyncLayer.Presentation\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T15:28:19.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Libro.cs",
-              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Domain\\Entities\\Libro.cs",
-              "RelativeDocumentMoniker": "SyncLayer.Domain\\Entities\\Libro.cs",
-              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Domain\\Entities\\Libro.cs",
-              "RelativeToolTip": "SyncLayer.Domain\\Entities\\Libro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T15:25:35.485Z",
+              "WhenOpened": "2026-02-09T17:06:47.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LibroDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\LibroDTOs.cs",
-              "RelativeDocumentMoniker": "SyncLayer.Application\\DTOs\\LibroDTOs.cs",
-              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\LibroDTOs.cs",
-              "RelativeToolTip": "SyncLayer.Application\\DTOs\\LibroDTOs.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T15:24:28.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "LibroController.cs",
               "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Presentation\\Controllers\\LibroController.cs",
               "RelativeDocumentMoniker": "SyncLayer.Presentation\\Controllers\\LibroController.cs",
               "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Presentation\\Controllers\\LibroController.cs",
               "RelativeToolTip": "SyncLayer.Presentation\\Controllers\\LibroController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T15:18:29.386Z",
+              "WhenOpened": "2026-02-09T17:06:45.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Presentation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Presentation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Presentation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SyncLayer.Presentation\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:43.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\Repository\\PersonaRepository.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Infrastructure\\Repository\\PersonaRepository.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\Repository\\PersonaRepository.cs",
+              "RelativeToolTip": "SyncLayer.Infrastructure\\Repository\\PersonaRepository.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:38.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LibroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\Repository\\LibroRepository.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Infrastructure\\Repository\\LibroRepository.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\Repository\\LibroRepository.cs",
+              "RelativeToolTip": "SyncLayer.Infrastructure\\Repository\\LibroRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:28.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\Repository\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Infrastructure\\Repository\\AuthRepository.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\Repository\\AuthRepository.cs",
+              "RelativeToolTip": "SyncLayer.Infrastructure\\Repository\\AuthRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:26.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DBConnectionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\DataBase\\DBConnectionFactory.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Infrastructure\\DataBase\\DBConnectionFactory.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\DataBase\\DBConnectionFactory.cs",
+              "RelativeToolTip": "SyncLayer.Infrastructure\\DataBase\\DBConnectionFactory.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:24.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Domain\\Entities\\Persona.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Domain\\Entities\\Persona.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Domain\\Entities\\Persona.cs",
+              "RelativeToolTip": "SyncLayer.Domain\\Entities\\Persona.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:22.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Domain\\Entities\\Libro.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Domain\\Entities\\Libro.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Domain\\Entities\\Libro.cs",
+              "RelativeToolTip": "SyncLayer.Domain\\Entities\\Libro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:20.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PersonaServices.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Services\\PersonaServices.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\Services\\PersonaServices.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Services\\PersonaServices.cs",
+              "RelativeToolTip": "SyncLayer.Application\\Services\\PersonaServices.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:17.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LibroServices.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Services\\LibroServices.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\Services\\LibroServices.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Services\\LibroServices.cs",
+              "RelativeToolTip": "SyncLayer.Application\\Services\\LibroServices.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:13.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "SyncLayer.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:06:12.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IPersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Interface\\IPersonaRepository.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\Interface\\IPersonaRepository.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Interface\\IPersonaRepository.cs",
+              "RelativeToolTip": "SyncLayer.Application\\Interface\\IPersonaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:05:54.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ILibroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Interface\\ILibroRepository.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\Interface\\ILibroRepository.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Interface\\ILibroRepository.cs",
+              "RelativeToolTip": "SyncLayer.Application\\Interface\\ILibroRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:05:52.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IAuthRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Interface\\IAuthRepository.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\Interface\\IAuthRepository.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\Interface\\IAuthRepository.cs",
+              "RelativeToolTip": "SyncLayer.Application\\Interface\\IAuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:05:51.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PersonaDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\PersonaDTOs.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\DTOs\\PersonaDTOs.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\PersonaDTOs.cs",
+              "RelativeToolTip": "SyncLayer.Application\\DTOs\\PersonaDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:05:50.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\LoginResponseDTO.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\DTOs\\LoginResponseDTO.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\LoginResponseDTO.cs",
+              "RelativeToolTip": "SyncLayer.Application\\DTOs\\LoginResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:05:49.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\DTOs\\LoginRequestDTO.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\LoginRequestDTO.cs",
+              "RelativeToolTip": "SyncLayer.Application\\DTOs\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:05:49.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LibroDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\LibroDTOs.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\DTOs\\LibroDTOs.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\LibroDTOs.cs",
+              "RelativeToolTip": "SyncLayer.Application\\DTOs\\LibroDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T17:05:47.628Z",
               "EditorCaption": ""
             }
           ]

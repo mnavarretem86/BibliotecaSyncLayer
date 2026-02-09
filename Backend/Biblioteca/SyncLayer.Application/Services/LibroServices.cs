@@ -17,7 +17,7 @@ namespace SyncLayer.Application.Services
             _repository = repository;
         }
 
-        public async Task<IEnumerable<LibroDTOs>> ListarLibrosAsync()
+        public async Task<IEnumerable<LibroDTOs>> ListarLibrosAsync()                    
         {
             var libros = await _repository.ListarLibrosAsync();
 
@@ -48,7 +48,8 @@ namespace SyncLayer.Application.Services
                 Titulo = libro.Titulo,
                 ISBN = libro.ISBN,
                 AnioPublicacion = libro.AnioPublicacion,
-                CategoriaID = libro.CategoriaID,
+                NombreCategoria = libro.NombreCategoria,
+                NombreEstado = libro.NombreEstado,
                 EstadoID = libro.EstadoID,
                 StockTotal = libro.StockTotal,
                 StockDisponible = libro.StockDisponible
