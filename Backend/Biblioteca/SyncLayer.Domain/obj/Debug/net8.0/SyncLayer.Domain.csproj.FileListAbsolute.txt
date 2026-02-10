@@ -1,0 +1,12 @@
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\bin\Debug\net8.0\SyncLayer.Domain.deps.json
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\bin\Debug\net8.0\SyncLayer.Domain.dll
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\bin\Debug\net8.0\SyncLayer.Domain.pdb
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\obj\Debug\net8.0\SyncLayer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\obj\Debug\net8.0\SyncLayer.Domain.AssemblyInfoInputs.cache
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\obj\Debug\net8.0\SyncLayer.Domain.AssemblyInfo.cs
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\obj\Debug\net8.0\SyncLayer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\obj\Debug\net8.0\SyncLayer.Domain.sourcelink.json
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\obj\Debug\net8.0\SyncLayer.Domain.dll
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\obj\Debug\net8.0\refint\SyncLayer.Domain.dll
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\obj\Debug\net8.0\SyncLayer.Domain.pdb
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Domain\obj\Debug\net8.0\ref\SyncLayer.Domain.dll
