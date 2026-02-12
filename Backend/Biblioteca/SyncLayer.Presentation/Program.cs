@@ -40,8 +40,26 @@ builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<IAutorRepository, AutorRepository>();
 builder.Services.AddScoped<AutorServices>();
 
+builder.Services.AddScoped<IEstadoRepository, EstadoRepository>();
+builder.Services.AddScoped<EstadoService>();
+
+
+builder.Services.AddScoped<ITipoPersonaRepository, TipoPersonaRepository>();
+builder.Services.AddScoped<TipoPersonaService>();
+
+
+
+
+
+
+
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+
+
 
 var app = builder.Build();
 

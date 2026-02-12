@@ -183,6 +183,18 @@
         }
       }
     },
+    "/api/Estado": {
+      "get": {
+        "tags": [
+          "Estado"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Libro": {
       "get": {
         "tags": [
@@ -190,33 +202,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Libro"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Libro"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Libro"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -268,24 +254,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Libro"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Libro"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Libro"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -433,6 +402,18 @@
           }
         }
       }
+    },
+    "/api/TipoPersona": {
+      "get": {
+        "tags": [
+          "TipoPersona"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -461,52 +442,6 @@
             "nullable": true
           },
           "estadoID": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Libro": {
-        "type": "object",
-        "properties": {
-          "libroID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "titulo": {
-            "type": "string",
-            "nullable": true
-          },
-          "isbn": {
-            "type": "string",
-            "nullable": true
-          },
-          "anioPublicacion": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nombreCategoria": {
-            "type": "string",
-            "nullable": true
-          },
-          "nombreEstado": {
-            "type": "string",
-            "nullable": true
-          },
-          "categoriaID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "estadoID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "stockTotal": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "stockDisponible": {
             "type": "integer",
             "format": "int32"
           }

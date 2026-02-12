@@ -1,11 +1,3 @@
-C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.csproj.AssemblyReference.cache
-C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.AssemblyInfoInputs.cache
-C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.AssemblyInfo.cs
-C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.csproj.CoreCompileInputs.cache
-C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.sourcelink.json
 C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\bin\Debug\net8.0\appsettings.json
 C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\bin\Debug\net8.0\SyncLayer.Presentation.staticwebassets.endpoints.json
@@ -69,6 +61,15 @@ C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLaye
 C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\bin\Debug\net8.0\SyncLayer.Application.pdb
 C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\bin\Debug\net8.0\SyncLayer.Infrastructure.pdb
 C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\bin\Debug\net8.0\SyncLayer.Domain.pdb
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.csproj.AssemblyReference.cache
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.AssemblyInfoInputs.cache
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.AssemblyInfo.cs
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\SyncLayer.Presentation.sourcelink.json
 C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Presentation\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

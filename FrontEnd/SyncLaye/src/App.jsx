@@ -7,10 +7,10 @@ import MainLayout from "./components/MainLayout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Libros from "./pages/Libros";
-import Autores from "./pages/autores";
+import Autores from "./pages/Autores/Autores";
 // import Prestamos from "./pages/Prestamos";
 // import Categorias from "./pages/Categorias";
-// import Personas from "./pages/Personas";
+import Personas from "./pages/Persona/Personas";
 // import Usuarios from "./pages/Usuarios";
 
 function App() {
@@ -26,6 +26,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/libros" element={<Libros />} />
             <Route path="/autores" element={<Autores />} />
+            <Route path="/personas" element={<Personas />} />
+
           </Route>
         </Routes>
       </BrowserRouter>

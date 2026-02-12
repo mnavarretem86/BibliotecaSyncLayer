@@ -11,7 +11,6 @@ export function useLogin() {
   const handleLogin = async (email, password) => {
 
     setLoading(true);
-
     try {
 
       const { data } = await login(email, password);
@@ -19,17 +18,14 @@ export function useLogin() {
       notify.success(`¡Bienvenido, ${data.primerNombre}!`);
 
       sessionStorage.setItem("user", JSON.stringify(data));
-
       navigate("/");
 
     } catch {
-
       notify.error("Credenciales incorrectas.");
 
     } finally {
       setLoading(false);
     }
   };
-
   return { handleLogin, loading };
 }

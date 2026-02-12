@@ -99,6 +99,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SyncLayer.Presentation.Controllers.EstadoController",
+    "Method": "ListarEstado",
+    "RelativePath": "api/Estado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SyncLayer.Presentation.Controllers.LibroController",
     "Method": "ListarLibros",
     "RelativePath": "api/Libro",
@@ -106,21 +116,11 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SyncLayer.Domain.Entities.Libro, SyncLayer.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "SyncLayer.Presentation.Controllers.LibroController",
-    "Method": "CrearLibro",
+    "Method": "Crear",
     "RelativePath": "api/Libro",
     "HttpMethod": "POST",
     "IsController": true,
@@ -148,21 +148,11 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "SyncLayer.Domain.Entities.Libro",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "SyncLayer.Presentation.Controllers.LibroController",
-    "Method": "ActualizarLibro",
+    "Method": "Actualizar",
     "RelativePath": "api/Libro/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -242,6 +232,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncLayer.Presentation.Controllers.TipoPersonaController",
+    "Method": "ListarTipoPersona",
+    "RelativePath": "api/TipoPersona",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using SyncLayer.Application.DTOs;
 using SyncLayer.Application.Services;
-using SyncLayer.Domain.Entities;
 
 namespace SyncLayer.Presentation.Controllers
 {
@@ -18,36 +16,44 @@ namespace SyncLayer.Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Libro>>> ListarLibros()
+        public async Task<IActionResult> ListarLibros()
         {
-            var lista = await _services.ListarLibrosAsync();
-
-            if (lista == null || !lista.Any())
-                return NoContent();
-
-            return Ok(lista);
+            try
+            {
+                var lista = await _services.ListarLibrosAsync();
+                return Ok(lista);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: " + ex.Message);
+            }
         }
-        [HttpGet("{id:int}")]
-        public async Task<ActionResult<Libro>> ObtenerPorId(int id)
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> ObtenerPorId(int id)
         {
-            if (id <= 0)
-                return BadRequest("El ID debe ser mayor que cero.");
+            try
+            {
+                var libro = await _services.ObtenerLibroPorIdAsync(id);
 
-            var libro = await _services.ObtenerLibroPorIdAsync(id);
+                if (libro == null)
+                    return NotFound("Libro no encontrado");
 
-            if (libro == null)
-                return NotFound("Libro no encontrado.");
-
-            return Ok(libro);
+                return Ok(libro);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
 
         [HttpPost]
-        public async Task<IActionResult> CrearLibro(LibroDTOs dto)
+        public async Task<IActionResult> Crear(LibroDTOs dto)
         {
             try
             {
                 await _services.CrearLibroAsync(dto);
-                return Ok("Libro creada correctamente");
+                return Ok("Libro creado correctamente");
             }
             catch (Exception ex)
             {
@@ -55,8 +61,8 @@ namespace SyncLayer.Presentation.Controllers
             }
         }
 
-        [HttpPut("{id:int}")]
-        public async Task<IActionResult> ActualizarLibro(int id, LibroDTOs dto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Actualizar(int id, LibroDTOs dto)
         {
             try
             {
