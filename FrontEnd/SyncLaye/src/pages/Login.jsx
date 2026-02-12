@@ -23,7 +23,6 @@ export default function Login() {
       text-slate-900
     ">
 
-      {/* PANEL PRINCIPAL (Depth Layer 1 - hundido) */}
       <div className="
         w-full max-w-sm
         p-10
