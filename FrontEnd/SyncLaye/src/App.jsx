@@ -8,10 +8,10 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Libros from "./pages/Libros";
 import Autores from "./pages/Autores/Autores";
+import Personas from "./pages/Persona/Personas";
 // import Prestamos from "./pages/Prestamos";
 // import Categorias from "./pages/Categorias";
-import Personas from "./pages/Persona/Personas";
-// import Usuarios from "./pages/Usuarios";
+
 
 
 function App() {
@@ -47,5 +47,4 @@ function App() {
     </>
   );
 }
-
 export default App;
