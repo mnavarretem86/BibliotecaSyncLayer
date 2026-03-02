@@ -110,7 +110,6 @@ namespace SyncLayer.Infrastructure.Repository
             cmd.Parameters.Add("@StockTotal", SqlDbType.Int).Value =(object?)l.StockTotal ?? DBNull.Value;
         }
 
-
         private async Task<Libro> MapToLibro(SqlDataReader dr)
         {
             return new Libro
@@ -119,6 +118,8 @@ namespace SyncLayer.Infrastructure.Repository
                 Titulo = dr["Titulo"]?.ToString() ?? string.Empty,
                 ISBN = dr["ISBN"]?.ToString() ?? string.Empty,
                 AnioPublicacion = await dr.GetFieldValueAsync<int>(dr.GetOrdinal("AnioPublicacion")),
+                CategoriaID = await dr.GetFieldValueAsync<int>(dr.GetOrdinal("CategoriaID")),
+                EstadoID = await dr.GetFieldValueAsync<int>(dr.GetOrdinal("EstadoID")),
                 NombreCategoria = dr["NombreCategoria"]?.ToString() ?? string.Empty,
                 NombreEstado = dr["NombreEstado"]?.ToString() ?? string.Empty,
                 StockTotal = await dr.GetFieldValueAsync<int>(dr.GetOrdinal("StockTotal")),
