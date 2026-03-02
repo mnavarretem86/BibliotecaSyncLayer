@@ -6,11 +6,10 @@ import MainLayout from "./components/MainLayout";
 // Páginas
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Libros from "./pages/Libros";
+import Libros from "./pages/Libro/Libros";
 import Autores from "./pages/Autores/Autores";
 import Personas from "./pages/Persona/Personas";
-// import Prestamos from "./pages/Prestamos";
-// import Categorias from "./pages/Categorias";
+import Categorias from "./pages/Categoria/Categorias";
 
 
 
@@ -28,6 +27,7 @@ function App() {
             <Route path="/libros" element={<Libros />} />
             <Route path="/autores" element={<Autores />} />
             <Route path="/personas" element={<Personas />} />
+            <Route path="/categorias" element={<Categorias />} />
 
           </Route>
         </Routes>

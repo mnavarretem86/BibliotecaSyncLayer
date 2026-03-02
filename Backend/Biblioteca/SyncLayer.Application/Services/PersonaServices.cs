@@ -17,25 +17,12 @@ namespace SyncLayer.Application.Services
         {
             _repository = repository;
         }
+
         public async Task<IEnumerable<PersonaDTOs>> ListarPersonasAsync()
         {
             var personas = await _repository.ListarPersonasAsync();
 
-            return personas.Select(p => new PersonaDTOs
-            {
-                PersonaID = p.PersonaID,
-                PrimerNombre = p.PrimerNombre,
-                SegundoNombre = p.SegundoNombre,
-                PrimerApellido = p.PrimerApellido,
-                SegundoApellido = p.SegundoApellido,
-                DNI = p.DNI,
-                Genero = p.Genero,
-                FechaNacimiento = p.FechaNacimiento,
-                Email = p.Email,
-                Telefono = p.Telefono,
-                Direccion = p.Direccion,
-                TipoPersonaID = p.TipoPersonaID
-            });
+            return personas.Select(MapToDTO).ToList();
         }
 
         public async Task<PersonaDTOs?> ObtenerPersonaPorIdAsync(int personaId)
@@ -45,6 +32,25 @@ namespace SyncLayer.Application.Services
             if (persona == null)
                 return null;
 
+            return MapToDTO(persona);
+        }
+
+
+        public async Task CrearPersonaAsync(PersonaDTOs dto)
+        {
+            var persona = MapToEntity(dto);
+
+            await _repository.CrearPersonaAsync(persona);
+        }
+
+        public async Task ActualizarPersonaAsync(PersonaDTOs dto)
+        {
+            var persona = MapToEntity(dto);
+
+            await _repository.ActualizarPersonaAsync(persona);
+        }
+        private PersonaDTOs MapToDTO(Persona persona)
+        {
             return new PersonaDTOs
             {
                 PersonaID = persona.PersonaID,
@@ -61,11 +67,11 @@ namespace SyncLayer.Application.Services
                 TipoPersonaID = persona.TipoPersonaID
             };
         }
-
-        public async Task CrearPersonaAsync(PersonaDTOs dto)
+        private Persona MapToEntity(PersonaDTOs dto)
         {
-            var persona = new Persona
+            return new Persona
             {
+                PersonaID = dto.PersonaID,
                 PrimerNombre = dto.PrimerNombre,
                 SegundoNombre = dto.SegundoNombre,
                 PrimerApellido = dto.PrimerApellido,
@@ -78,29 +84,6 @@ namespace SyncLayer.Application.Services
                 Direccion = dto.Direccion,
                 TipoPersonaID = dto.TipoPersonaID
             };
-
-            await _repository.CrearPersonaAsync(persona);
-        }
-
-        public async Task ActualizarPersonaAsync(int personaId, PersonaDTOs dto)
-        {
-            var persona = new Persona
-            {
-                PersonaID = personaId,
-                PrimerNombre = dto.PrimerNombre,
-                SegundoNombre = dto.SegundoNombre,
-                PrimerApellido = dto.PrimerApellido,
-                SegundoApellido = dto.SegundoApellido,
-                DNI = dto.DNI,
-                Genero = dto.Genero,
-                FechaNacimiento = dto.FechaNacimiento,
-                Email = dto.Email,
-                Telefono = dto.Telefono,
-                Direccion = dto.Direccion,
-                TipoPersonaID = dto.TipoPersonaID
-            };
-
-            await _repository.ActualizarPersonaAsync(persona);
         }
     }
 }

@@ -15,6 +15,7 @@ namespace SyncLayer.Presentation.Controllers
             _services = services;
         }
 
+
         [HttpGet]
         public async Task<IActionResult> ListarPersonas()
         {
@@ -28,6 +29,7 @@ namespace SyncLayer.Presentation.Controllers
                 return StatusCode(500, "Internal server error: " + ex.Message);
             }
         }
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> ObtenerPorId(int id)
@@ -47,9 +49,8 @@ namespace SyncLayer.Presentation.Controllers
             }
         }
 
-
         [HttpPost]
-        public async Task<IActionResult> Crear(PersonaDTOs dto)
+        public async Task<IActionResult> Crear([FromBody] PersonaDTOs dto)
         {
             try
             {
@@ -64,11 +65,14 @@ namespace SyncLayer.Presentation.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Actualizar(int id, PersonaDTOs dto)
+        public async Task<IActionResult> Actualizar(int id, [FromBody] PersonaDTOs dto)
         {
             try
             {
-                await _services.ActualizarPersonaAsync(id, dto);
+                dto.PersonaID = id;
+
+                await _services.ActualizarPersonaAsync(dto);
+
                 return Ok("Persona actualizada correctamente");
             }
             catch (Exception ex)

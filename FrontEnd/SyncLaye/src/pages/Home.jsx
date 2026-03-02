@@ -8,7 +8,8 @@ import {
   UserCog, 
   LogOut, 
   ArrowRight, 
-  Handshake 
+  Handshake,
+  PanelLeftDashed 
 } from "lucide-react";
 import Header from "../components/Header"; 
 
@@ -34,6 +35,7 @@ export default function Home() {
     { name: "Categorías", path: "/categorias", icon: <Tags size={22} /> },
     { name: "Personas", path: "/personas", icon: <Users size={22} /> },
     { name: "Usuarios", path: "/usuarios", icon: <UserCog size={22} /> },
+
   ];
 
 

@@ -17,7 +17,6 @@ namespace SyncLayer.Presentation.Controllers
             _autorServices = autorServices;
         }
 
-        // GET: api/Autor
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AutorDTOs>>> GetAutores()
         {
@@ -25,7 +24,6 @@ namespace SyncLayer.Presentation.Controllers
             return Ok(autores);
         }
 
-        // GET: api/Autor/5
         [HttpGet("{id}")]
         public async Task<ActionResult<AutorDTOs>> GetAutor(int id)
         {
@@ -37,7 +35,6 @@ namespace SyncLayer.Presentation.Controllers
             return Ok(autor);
         }
 
-        // POST: api/Autor
         [HttpPost]
         public async Task<IActionResult> CrearAutor([FromBody] AutorDTOs dto)
         {
@@ -48,14 +45,16 @@ namespace SyncLayer.Presentation.Controllers
             return Ok(new { mensaje = "Autor creado correctamente" });
         }
 
-        // PUT: api/Autor/5
         [HttpPut("{id}")]
         public async Task<IActionResult> ActualizarAutor(int id, [FromBody] AutorDTOs dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            await _autorServices.ActualizarAutorAsync(id, dto);
+            dto.AutorID = id;
+
+            await _autorServices.ActualizarAutorAsync(dto);
+
             return Ok(new { mensaje = "Autor actualizado correctamente" });
         }
     }

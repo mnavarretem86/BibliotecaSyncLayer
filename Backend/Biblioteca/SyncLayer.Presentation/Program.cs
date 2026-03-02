@@ -49,6 +49,10 @@ builder.Services.AddScoped<TipoPersonaService>();
 
 
 
+builder.Services.AddScoped<ICategoriaRepository,CategoriaRepository> ();
+builder.Services.AddScoped<CategoriaService>();
+
+
 
 
 

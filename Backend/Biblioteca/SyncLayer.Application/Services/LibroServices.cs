@@ -17,23 +17,14 @@ namespace SyncLayer.Application.Services
             _repository = repository;
         }
 
-        public async Task<IEnumerable<LibroDTOs>> ListarLibrosAsync()                    
+
+        public async Task<IEnumerable<LibroDTOs>> ListarLibrosAsync()
         {
             var libros = await _repository.ListarLibrosAsync();
 
-            return libros.Select(l => new LibroDTOs
-            {
-                LibroID = l.LibroID,
-                Titulo = l.Titulo,
-                ISBN = l.ISBN,
-                AnioPublicacion = l.AnioPublicacion,
-                NombreCategoria = l.NombreCategoria,
-                NombreEstado = l.NombreEstado,
-                EstadoID = l.EstadoID,
-                StockTotal = l.StockTotal,
-                StockDisponible = l.StockDisponible
-            });
+            return libros.Select(MapToDTO).ToList();
         }
+
 
         public async Task<LibroDTOs?> ObtenerLibroPorIdAsync(int libroId)
         {
@@ -42,6 +33,26 @@ namespace SyncLayer.Application.Services
             if (libro == null)
                 return null;
 
+            return MapToDTO(libro);
+        }
+
+        public async Task CrearLibroAsync(LibroDTOs dto)
+        {
+            var libro = MapToEntity(dto);
+
+            await _repository.CrearLibroAsync(libro);
+        }
+
+
+        public async Task ActualizarLibroAsync(LibroDTOs dto)
+        {
+            var libro = MapToEntity(dto);
+
+            await _repository.ActualizarLibroAsync(libro);
+        }
+
+        private LibroDTOs MapToDTO(Libro libro)
+        {
             return new LibroDTOs
             {
                 LibroID = libro.LibroID,
@@ -51,15 +62,17 @@ namespace SyncLayer.Application.Services
                 NombreCategoria = libro.NombreCategoria,
                 NombreEstado = libro.NombreEstado,
                 EstadoID = libro.EstadoID,
+                CategoriaID = libro.CategoriaID,
                 StockTotal = libro.StockTotal,
                 StockDisponible = libro.StockDisponible
             };
         }
 
-        public async Task CrearLibroAsync(LibroDTOs dto)
+        private Libro MapToEntity(LibroDTOs dto)
         {
-            var libro = new Libro
+            return new Libro
             {
+                LibroID = dto.LibroID,
                 Titulo = dto.Titulo,
                 ISBN = dto.ISBN,
                 AnioPublicacion = dto.AnioPublicacion,
@@ -67,24 +80,6 @@ namespace SyncLayer.Application.Services
                 EstadoID = dto.EstadoID,
                 StockTotal = dto.StockTotal
             };
-
-            await _repository.CrearLibroAsync(libro);
-        }
-
-        public async Task ActualizarLibroAsync(int libroId, LibroDTOs dto)
-        {
-            var libro = new Libro
-            {
-                LibroID = libroId,
-                Titulo = dto.Titulo,
-                ISBN = dto.ISBN,
-                AnioPublicacion = dto.AnioPublicacion,
-                CategoriaID = dto.CategoriaID,
-                EstadoID = dto.EstadoID,
-                StockTotal = dto.StockTotal
-            };
-
-            await _repository.ActualizarLibroAsync(libro);
         }
     }
 }

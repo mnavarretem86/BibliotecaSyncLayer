@@ -20,15 +20,7 @@ namespace SyncLayer.Application.Services
         {
             var autores = await _repository.ListarAutorAsync();
 
-            return autores.Select(a => new AutorDTOs
-            {
-                AutorID = a.AutorID,
-                PrimerNombre = a.PrimerNombre,
-                PrimerApellido = a.PrimerApellido,
-                SegundoApellido = a.SegundoApellido,
-                Nacionalidad = a.Nacionalidad,
-                EstadoID = a.EstadoID
-            });
+            return autores.Select(MapToDTO).ToList();
         }
 
         public async Task<AutorDTOs?> ObtenerAutorPorIdAsync(int autorId)
@@ -38,6 +30,25 @@ namespace SyncLayer.Application.Services
             if (autor == null)
                 return null;
 
+            return MapToDTO(autor);
+        }
+
+        public async Task CrearAutorAsync(AutorDTOs dto)
+        {
+            var autor = MapToEntity(dto);
+
+            await _repository.CrearAutorAsync(autor);
+        }
+
+        public async Task ActualizarAutorAsync(AutorDTOs dto)
+        {
+            var autor = MapToEntity(dto);
+
+            await _repository.ActualizarAutorAsync(autor);
+        }
+
+        private AutorDTOs MapToDTO(Autor autor)
+        {
             return new AutorDTOs
             {
                 AutorID = autor.AutorID,
@@ -49,33 +60,17 @@ namespace SyncLayer.Application.Services
             };
         }
 
-        public async Task CrearAutorAsync(AutorDTOs dto)
+        private Autor MapToEntity(AutorDTOs dto)
         {
-            var autor = new Autor
+            return new Autor
             {
+                AutorID = dto.AutorID,
                 PrimerNombre = dto.PrimerNombre,
                 PrimerApellido = dto.PrimerApellido,
                 SegundoApellido = dto.SegundoApellido,
                 Nacionalidad = dto.Nacionalidad,
                 EstadoID = dto.EstadoID
             };
-
-            await _repository.CrearAutorAsync(autor);
-        }
-
-        public async Task ActualizarAutorAsync(int autorId, AutorDTOs dto)
-        {
-            var autor = new Autor
-            {
-                AutorID = autorId,
-                PrimerNombre = dto.PrimerNombre,
-                PrimerApellido = dto.PrimerApellido,
-                SegundoApellido = dto.SegundoApellido,
-                Nacionalidad = dto.Nacionalidad,
-                EstadoID = dto.EstadoID
-            };
-
-            await _repository.ActualizarAutorAsync(autor);
         }
     }
 }

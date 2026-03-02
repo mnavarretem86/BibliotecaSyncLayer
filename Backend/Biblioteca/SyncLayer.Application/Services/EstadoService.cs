@@ -21,6 +21,9 @@ namespace SyncLayer.Application.Services
             _estadoRepository = estadoRepository;
         }
 
+
+
+
         public async Task<IEnumerable<EstadoDTOs>> GetEstadoListAsync()
         {
 
@@ -47,6 +50,7 @@ namespace SyncLayer.Application.Services
             await _estadoRepository.UpdateEstadoAsync (Estado);
 
         }
+
 
 
         private EstadoDTOs MapToDTO(Estado estado)

@@ -29,6 +29,7 @@ namespace SyncLayer.Presentation.Controllers
             }
         }
 
+
         [HttpGet("{id}")]
         public async Task<IActionResult> ObtenerPorId(int id)
         {
@@ -48,7 +49,7 @@ namespace SyncLayer.Presentation.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Crear(LibroDTOs dto)
+        public async Task<IActionResult> Crear([FromBody] LibroDTOs dto)
         {
             try
             {
@@ -61,12 +62,16 @@ namespace SyncLayer.Presentation.Controllers
             }
         }
 
+ 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Actualizar(int id, LibroDTOs dto)
+        public async Task<IActionResult> Actualizar(int id, [FromBody] LibroDTOs dto)
         {
             try
             {
-                await _services.ActualizarLibroAsync(id, dto);
+                dto.LibroID = id;
+
+                await _services.ActualizarLibroAsync(dto);
+
                 return Ok("Libro actualizado correctamente");
             }
             catch (Exception ex)
