@@ -14,16 +14,13 @@ export function useCreateLibro(onRefresh, onClose) {
     estadoID: "",
     stockTotal: 0
   };
-
   const [formData, setFormData] = useState(initialForm);
   const [categorias, setCategorias] = useState([]);
   const [estados, setEstados] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-
     async function loadData() {
-
       try {
 
         const [{ data: catData }, { data: estData }] = await Promise.all([
@@ -44,13 +41,10 @@ export function useCreateLibro(onRefresh, onClose) {
 
       }
     }
-
     loadData();
 
   }, []);
-
   const handleChange = ({ target: { name, value } }) => {
-
     setFormData(prev => ({
       ...prev,
       [name]:
@@ -63,18 +57,13 @@ export function useCreateLibro(onRefresh, onClose) {
     }));
 
   };
-
   const saveLibro = async (e) => {
 
     e.preventDefault();
     setLoading(true);
-
     try {
-
       await createLibro(formData);
-
       notify.success("Libro registrado con éxito");
-
       setFormData(initialForm);
       onRefresh?.();
       onClose?.();

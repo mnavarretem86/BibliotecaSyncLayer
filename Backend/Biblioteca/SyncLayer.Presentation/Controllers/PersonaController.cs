@@ -50,7 +50,7 @@ namespace SyncLayer.Presentation.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Crear([FromBody] PersonaDTOs dto)
+        public async Task<IActionResult> Crear([FromBody] PersonaDTO dto)
         {
             try
             {
@@ -65,7 +65,7 @@ namespace SyncLayer.Presentation.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Actualizar(int id, [FromBody] PersonaDTOs dto)
+        public async Task<IActionResult> Actualizar(int id, [FromBody] PersonaDTO dto)
         {
             try
             {

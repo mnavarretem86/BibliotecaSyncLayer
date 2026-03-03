@@ -18,14 +18,14 @@ namespace SyncLayer.Application.Services
             _repository = repository;
         }
 
-        public async Task<IEnumerable<PersonaDTOs>> ListarPersonasAsync()
+        public async Task<IEnumerable<PersonaDTO>> ListarPersonasAsync()
         {
             var personas = await _repository.ListarPersonasAsync();
 
             return personas.Select(MapToDTO).ToList();
         }
 
-        public async Task<PersonaDTOs?> ObtenerPersonaPorIdAsync(int personaId)
+        public async Task<PersonaDTO?> ObtenerPersonaPorIdAsync(int personaId)
         {
             var persona = await _repository.ObtenerPersonaPorIdAsync(personaId);
 
@@ -36,22 +36,22 @@ namespace SyncLayer.Application.Services
         }
 
 
-        public async Task CrearPersonaAsync(PersonaDTOs dto)
+        public async Task CrearPersonaAsync(PersonaDTO dto)
         {
             var persona = MapToEntity(dto);
 
             await _repository.CrearPersonaAsync(persona);
         }
 
-        public async Task ActualizarPersonaAsync(PersonaDTOs dto)
+        public async Task ActualizarPersonaAsync(PersonaDTO dto)
         {
             var persona = MapToEntity(dto);
 
             await _repository.ActualizarPersonaAsync(persona);
         }
-        private PersonaDTOs MapToDTO(Persona persona)
+        private PersonaDTO MapToDTO(Persona persona)
         {
-            return new PersonaDTOs
+            return new PersonaDTO
             {
                 PersonaID = persona.PersonaID,
                 PrimerNombre = persona.PrimerNombre,
@@ -67,7 +67,7 @@ namespace SyncLayer.Application.Services
                 TipoPersonaID = persona.TipoPersonaID
             };
         }
-        private Persona MapToEntity(PersonaDTOs dto)
+        private Persona MapToEntity(PersonaDTO dto)
         {
             return new Persona
             {

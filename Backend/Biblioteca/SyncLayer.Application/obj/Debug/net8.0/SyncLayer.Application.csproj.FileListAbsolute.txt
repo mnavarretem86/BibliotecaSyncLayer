@@ -1,0 +1,16 @@
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\bin\Debug\net8.0\SyncLayer.Application.deps.json
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\bin\Debug\net8.0\SyncLayer.Application.dll
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\bin\Debug\net8.0\SyncLayer.Application.pdb
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\bin\Debug\net8.0\SyncLayer.Domain.dll
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\bin\Debug\net8.0\SyncLayer.Domain.pdb
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\SyncLayer.Application.csproj.AssemblyReference.cache
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\SyncLayer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\SyncLayer.Application.AssemblyInfoInputs.cache
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\SyncLayer.Application.AssemblyInfo.cs
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\SyncLayer.Application.csproj.CoreCompileInputs.cache
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\SyncLayer.Application.sourcelink.json
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\SyncLaye.C6987F59.Up2Date
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\SyncLayer.Application.dll
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\refint\SyncLayer.Application.dll
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\SyncLayer.Application.pdb
+C:\Users\mnavarrete\Desktop\UdeM\BibliotecaSyncLayer\Backend\Biblioteca\SyncLayer.Application\obj\Debug\net8.0\ref\SyncLayer.Application.dll

@@ -10,6 +10,10 @@ import Libros from "./pages/Libro/Libros";
 import Autores from "./pages/Autores/Autores";
 import Personas from "./pages/Persona/Personas";
 import Categorias from "./pages/Categoria/Categorias";
+import Prestamos from "./pages/Prestamos/Prestamos";
+import Mora from "./pages/mora";
+
+
 
 
 
@@ -28,6 +32,10 @@ function App() {
             <Route path="/autores" element={<Autores />} />
             <Route path="/personas" element={<Personas />} />
             <Route path="/categorias" element={<Categorias />} />
+            <Route path="/prestamos" element={<Prestamos />} />
+             <Route path="/mora" element={<Mora />} />
+
+
 
           </Route>
         </Routes>

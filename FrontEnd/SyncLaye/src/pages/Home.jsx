@@ -9,7 +9,7 @@ import {
   LogOut, 
   ArrowRight, 
   Handshake,
-  PanelLeftDashed 
+  HandCoins 
 } from "lucide-react";
 import Header from "../components/Header"; 
 
@@ -34,10 +34,11 @@ export default function Home() {
     { name: "Autores", path: "/autores", icon: <UserRound size={22} /> },
     { name: "Categorías", path: "/categorias", icon: <Tags size={22} /> },
     { name: "Personas", path: "/personas", icon: <Users size={22} /> },
+    { name: "Mora", path: "/mora", icon: <HandCoins size={22} /> },
     { name: "Usuarios", path: "/usuarios", icon: <UserCog size={22} /> },
 
-  ];
 
+  ];
 
 
   const cerrarSesion = () => {
@@ -46,7 +47,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 py-20 font-sans antialiased text-slate-900 bg-slate-200">
+    <div className="flex flex-col items-center pt-10 pb-6 px-6 font-sans antialiased text-slate-900 bg-slate-200">
       
       <Header user={user} />
 
@@ -67,7 +68,7 @@ export default function Home() {
           </div>
         ) : (
           <div className="animate-in fade-in zoom-in-95 duration-500">
-            <nav className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+            <nav className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {menuItems.map((item) => (
                 <Link
                   key={item.path}

@@ -427,17 +427,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PersonaDTOs"
+                "$ref": "#/components/schemas/PersonaDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/PersonaDTOs"
+                "$ref": "#/components/schemas/PersonaDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/PersonaDTOs"
+                "$ref": "#/components/schemas/PersonaDTO"
               }
             }
           }
@@ -490,21 +490,128 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PersonaDTOs"
+                "$ref": "#/components/schemas/PersonaDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/PersonaDTOs"
+                "$ref": "#/components/schemas/PersonaDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/PersonaDTOs"
+                "$ref": "#/components/schemas/PersonaDTO"
               }
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Prestamo": {
+      "get": {
+        "tags": [
+          "Prestamo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Prestamo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePrestamoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePrestamoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePrestamoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Prestamo/{id}": {
+      "get": {
+        "tags": [
+          "Prestamo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Prestamo/devolver": {
+      "put": {
+        "tags": [
+          "Prestamo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevolverPrestamoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevolverPrestamoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevolverPrestamoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ReporteMora": {
+      "get": {
+        "tags": [
+          "ReporteMora"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -571,6 +678,34 @@
         },
         "additionalProperties": false
       },
+      "CreatePrestamoDTO": {
+        "type": "object",
+        "properties": {
+          "libroID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DevolverPrestamoDTO": {
+        "type": "object",
+        "properties": {
+          "prestamoID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LibroDTOs": {
         "type": "object",
         "properties": {
@@ -631,7 +766,7 @@
         },
         "additionalProperties": false
       },
-      "PersonaDTOs": {
+      "PersonaDTO": {
         "type": "object",
         "properties": {
           "personaID": {

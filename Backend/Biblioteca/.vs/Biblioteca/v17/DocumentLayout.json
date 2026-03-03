@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\dtos\\devolverprestamodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\dtos\\devolverprestamodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.application\\dtos\\prestamodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D487ADA-0F16-46E6-A063-4286FD6505D8}|SyncLayer.Application\\SyncLayer.Application.csproj|solutionrelative:synclayer.application\\dtos\\prestamodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{585607DF-D201-48C2-B267-213666120EEC}|SyncLayer.Domain\\SyncLayer.Domain.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.domain\\entities\\prestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{585607DF-D201-48C2-B267-213666120EEC}|SyncLayer.Domain\\SyncLayer.Domain.csproj|solutionrelative:synclayer.domain\\entities\\prestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|c:\\users\\mnavarrete\\desktop\\udem\\bibliotecasynclayer\\backend\\biblioteca\\synclayer.infrastructure\\repository\\reportemorarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224691F7-A181-40BD-BC1B-D1D062DFDF6C}|SyncLayer.Infrastructure\\SyncLayer.Infrastructure.csproj|solutionrelative:synclayer.infrastructure\\repository\\reportemorarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 361,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DevolverPrestamoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\DevolverPrestamoDTO.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\DTOs\\DevolverPrestamoDTO.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\DevolverPrestamoDTO.cs",
+              "RelativeToolTip": "SyncLayer.Application\\DTOs\\DevolverPrestamoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T15:12:35.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrestamoDetalleDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\PrestamoDetalleDTO.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Application\\DTOs\\PrestamoDetalleDTO.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Application\\DTOs\\PrestamoDetalleDTO.cs",
+              "RelativeToolTip": "SyncLayer.Application\\DTOs\\PrestamoDetalleDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T15:12:30.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Prestamo.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Domain\\Entities\\Prestamo.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Domain\\Entities\\Prestamo.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Domain\\Entities\\Prestamo.cs",
+              "RelativeToolTip": "SyncLayer.Domain\\Entities\\Prestamo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T15:10:50.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReporteMoraRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\Repository\\ReporteMoraRepository.cs",
+              "RelativeDocumentMoniker": "SyncLayer.Infrastructure\\Repository\\ReporteMoraRepository.cs",
+              "ToolTip": "C:\\Users\\mnavarrete\\Desktop\\UdeM\\BibliotecaSyncLayer\\Backend\\Biblioteca\\SyncLayer.Infrastructure\\Repository\\ReporteMoraRepository.cs",
+              "RelativeToolTip": "SyncLayer.Infrastructure\\Repository\\ReporteMoraRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowB8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T14:38:11.281Z",
+              "EditorCaption": ""
             }
           ]
         }

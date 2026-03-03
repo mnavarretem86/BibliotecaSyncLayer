@@ -248,7 +248,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "SyncLayer.Application.DTOs.PersonaDTOs",
+        "Type": "SyncLayer.Application.DTOs.PersonaDTO",
         "IsRequired": true
       }
     ],
@@ -285,10 +285,78 @@
       },
       {
         "Name": "dto",
-        "Type": "SyncLayer.Application.DTOs.PersonaDTOs",
+        "Type": "SyncLayer.Application.DTOs.PersonaDTO",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncLayer.Presentation.Controllers.PrestamoController",
+    "Method": "ListarPrestamos",
+    "RelativePath": "api/Prestamo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncLayer.Presentation.Controllers.PrestamoController",
+    "Method": "Crear",
+    "RelativePath": "api/Prestamo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SyncLayer.Application.DTOs.CreatePrestamoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncLayer.Presentation.Controllers.PrestamoController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/Prestamo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncLayer.Presentation.Controllers.PrestamoController",
+    "Method": "Devolver",
+    "RelativePath": "api/Prestamo/devolver",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SyncLayer.Application.DTOs.DevolverPrestamoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncLayer.Presentation.Controllers.ReporteMoraController",
+    "Method": "ObtenerReporteMora",
+    "RelativePath": "api/ReporteMora",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

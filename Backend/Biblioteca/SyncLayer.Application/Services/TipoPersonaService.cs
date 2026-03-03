@@ -17,7 +17,7 @@ namespace SyncLayer.Application.Services
             _repository = repository;
         }
 
-        public async Task<IEnumerable<TipoPersonaDTOs>> GetTipoPersonaListAsync()
+        public async Task<IEnumerable<TipoPersonaDTO>> GetTipoPersonaListAsync()
         {
 
             var tipos = await _repository.GetAllTipoPersonaAsync();
@@ -25,9 +25,9 @@ namespace SyncLayer.Application.Services
             return tipos.Select(MapToDTO).ToList();
         }
 
-        private TipoPersonaDTOs MapToDTO(TipoPersona tipopersona)
+        private TipoPersonaDTO MapToDTO(TipoPersona tipopersona)
         {
-            return new TipoPersonaDTOs
+            return new TipoPersonaDTO
             {
                 TipoPersonaID = tipopersona.TipoPersonaID,
                 NombreTipo = tipopersona.NombreTipo,

@@ -2,8 +2,8 @@ import Logo from "../img/Biblioteca.png";
 
 export default function Header({ user }) {
   return (
-    <header className="w-full max-w-xl text-center mb-8">
-      <div className="mb-12">
+    <header className="w-full max-w-xl text-center mb-6">
+      <div className="mb-6">
         <img 
           src={Logo} 
           alt="Logo Biblioteca" 
