@@ -49,7 +49,7 @@ builder.Services.AddScoped<TipoPersonaService>();
 
 
 
-builder.Services.AddScoped<ICategoriaRepository,CategoriaRepository> ();
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<CategoriaService>();
 
 builder.Services.AddScoped<IPrestamoRepository, PrestamoRepository>();
@@ -57,6 +57,10 @@ builder.Services.AddScoped<PrestamoServices>();
 
 builder.Services.AddScoped<IReporteMoraRepository, ReporteMoraRepository>();
 builder.Services.AddScoped<ReporteMoraService>();
+
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<UsuarioService>();
+
 
 
 

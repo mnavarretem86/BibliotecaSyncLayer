@@ -1,14 +1,20 @@
 import { useState } from "react";
 import { useAutores } from "../../hooks/Autores/useAutores";
-import { Plus, Edit2, Globe, User, ArrowLeft } from "lucide-react";
+import { 
+  Plus, Edit2, Globe, User, ArrowLeft, 
+  Search, ChevronLeft, ChevronRight 
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import AutorCreate from "./AutorCreate";
 import AutorEdit from "./AutorEdit"; 
 
 export default function Autores() {
-  const { autores, loading, refetch } = useAutores();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { 
+    autores, loading, refetch, search, setSearch,
+    currentPage, setCurrentPage, totalPages 
+  } = useAutores();
   
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [selectedAutorId, setSelectedAutorId] = useState(null);
 
@@ -18,8 +24,8 @@ export default function Autores() {
   };
 
   const renderBadge = (txt) => (
-    <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${
-      txt?.toLowerCase().includes("activo") ? "bg-green-100 text-green-600" : "bg-red-100 text-red-600"
+    <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-[2px_2px_4px_#c8d0e7,-2px_-2px_4px_#ffffff] ${
+      txt?.toLowerCase().includes("activo") ? "text-green-600" : "text-red-600"
     }`}>
       {txt || "N/A"}
     </span>
@@ -31,19 +37,33 @@ export default function Autores() {
         <div>
           <Link to="/" className="inline-flex items-center text-slate-500 hover:text-blue-600 mb-2 transition-colors group">
             <ArrowLeft size={16} className="mr-1 group-hover:-translate-x-1 transition-transform" />
-            <span className="text-xs font-medium uppercase tracking-widest text-[10px]">Gestión Central</span>
+            <span className="text-[10px] font-medium uppercase tracking-widest">Gestión Central</span>
           </Link>
           <h1 className="text-3xl font-light tracking-tight text-slate-900">
             Catálogo de <span className="font-semibold text-blue-600">Autores</span>
           </h1>
         </div>
         
-        <button 
-          onClick={() => setIsModalOpen(true)}
-          className="flex items-center gap-2 px-6 py-3 bg-slate-200 rounded-2xl shadow-[6px_6px_12px_#c8d0e7,-6px_-6px_12px_#ffffff] hover:shadow-[inset_4px_4px_8px_#c8d0e7,inset_-4px_-4px_8px_#ffffff] transition-all font-medium text-sm active:scale-95"
-        >
-          <Plus size={18} /> Nuevo Autor
-        </button>
+        <div className="flex flex-wrap items-center gap-4">
+          {/* Buscador Neumórfico */}
+          <div className="relative group">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-blue-500 transition-colors" size={18} />
+            <input 
+              type="text"
+              placeholder="Buscar autor o país..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="pl-12 pr-4 py-3 bg-slate-200 rounded-2xl shadow-[inset_4px_4px_8px_#c8d0e7,inset_-4px_-4px_8px_#ffffff] outline-none text-sm w-64 focus:ring-2 ring-blue-500/20 transition-all"
+            />
+          </div>
+
+          <button 
+            onClick={() => setIsModalOpen(true)}
+            className="flex items-center gap-2 px-6 py-3 bg-slate-200 rounded-2xl shadow-[6px_6px_12px_#c8d0e7,-6px_-6px_12px_#ffffff] hover:shadow-[inset_4px_4px_8px_#c8d0e7,inset_-4px_-4px_8px_#ffffff] transition-all font-medium text-sm active:scale-95"
+          >
+            <Plus size={18} /> Nuevo Autor
+          </button>
+        </div>
       </header>
 
       <div className="bg-slate-200 rounded-[2rem] shadow-[8px_8px_16px_#c8d0e7,-8px_-8px_16px_#ffffff] overflow-hidden border border-white/20">
@@ -59,9 +79,9 @@ export default function Autores() {
           <tbody>
             {loading ? (
               <tr><td colSpan="4" className="py-20 text-center text-[10px] uppercase tracking-widest text-slate-400">Consultando API...</td></tr>
-            ) : (
+            ) : autores.length > 0 ? (
               autores.map((a) => (
-                <tr key={a.autorID} className="group hover:bg-white/30 transition-colors">
+                <tr key={a.autorID} className="group hover:bg-white/30 transition-colors border-t border-slate-300/50">
                   <td className="px-8 py-4 flex items-center gap-3">
                     <div className="w-10 h-10 bg-slate-200 rounded-xl flex items-center justify-center shadow-[4px_4px_8px_#c8d0e7,-4px_-4px_8px_#ffffff] text-slate-500">
                       <User size={18} />
@@ -83,23 +103,39 @@ export default function Autores() {
                   </td>
                 </tr>
               ))
+            ) : (
+              <tr><td colSpan="4" className="py-10 text-center text-slate-400">No se encontraron autores</td></tr>
             )}
           </tbody>
         </table>
+
+        <div className="px-8 py-4 bg-slate-300/30 flex justify-between items-center border-t border-slate-300/50">
+          <span className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">
+            Página {currentPage} de {totalPages || 1}
+          </span>
+          <div className="flex gap-4">
+            <button 
+              disabled={currentPage === 1}
+              onClick={() => setCurrentPage(prev => prev - 1)}
+              className="p-2 rounded-lg shadow-[4px_4px_8px_#c8d0e7,-4px_-4px_8px_#ffffff] disabled:opacity-30 active:scale-95 transition-all text-slate-600"
+            >
+              <ChevronLeft size={16} />
+            </button>
+            <button 
+              disabled={currentPage === totalPages || totalPages === 0}
+              onClick={() => setCurrentPage(prev => prev + 1)}
+              className="p-2 rounded-lg shadow-[4px_4px_8px_#c8d0e7,-4px_-4px_8px_#ffffff] disabled:opacity-30 active:scale-95 transition-all text-slate-600"
+            >
+              <ChevronRight size={16} />
+            </button>
+          </div>
+        </div>
       </div>
 
-      <AutorCreate 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        onRefresh={refetch} 
-      />
-
+      <AutorCreate isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onRefresh={refetch} />
       <AutorEdit 
         isOpen={isEditModalOpen}
-        onClose={() => {
-          setIsEditModalOpen(false);
-          setSelectedAutorId(null);
-        }}
+        onClose={() => { setIsEditModalOpen(false); setSelectedAutorId(null); }}
         onRefresh={refetch}
         autorId={selectedAutorId}
       />
