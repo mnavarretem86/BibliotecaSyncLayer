@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SyncLayer.Application.DTOs
+{
+    public class PrestamoDetalleDTO
+    {
+        public int PrestamoID { get; set; }
+        public string Titulo { get; set; } = string.Empty;
+        public DateTime FechaPrestamo { get; set; }
+        public DateTime FechaVencimiento { get; set; }
+        public string NombreEstado { get; set; } = string.Empty;
+    }
+}

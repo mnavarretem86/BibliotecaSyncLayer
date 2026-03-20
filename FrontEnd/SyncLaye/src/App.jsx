@@ -12,6 +12,8 @@ import Personas from "./pages/Persona/Personas";
 import Categorias from "./pages/Categoria/Categorias";
 import Prestamos from "./pages/Prestamos/Prestamos";
 import Mora from "./pages/mora";
+import Usuario from "./pages/Usuario/Usuarios";
+
 
 
 
@@ -33,7 +35,9 @@ function App() {
             <Route path="/personas" element={<Personas />} />
             <Route path="/categorias" element={<Categorias />} />
             <Route path="/prestamos" element={<Prestamos />} />
-             <Route path="/mora" element={<Mora />} />
+            <Route path="/mora" element={<Mora />} />
+            <Route path="/usuarios" element={<Usuario />} />
+
 
 
 

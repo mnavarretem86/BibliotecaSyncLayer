@@ -61,6 +61,8 @@ builder.Services.AddScoped<ReporteMoraService>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<UsuarioService>();
 
+builder.Services.AddScoped<IRolRepository, RolRepository>();
+builder.Services.AddScoped<RolService>();
 
 
 

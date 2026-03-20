@@ -38,7 +38,7 @@ export function useLibros() {
     loading, 
     refetch: fetchLibros, 
     search, 
-    setSearch: (val) => { setSearch(val); setCurrentPage(1); }, // Reset a pag 1 al buscar
+    setSearch: (val) => { setSearch(val); setCurrentPage(1); }, 
     currentPage, 
     setCurrentPage, 
     totalPages 

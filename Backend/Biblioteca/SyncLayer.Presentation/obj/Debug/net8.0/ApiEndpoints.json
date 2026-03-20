@@ -360,6 +360,63 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SyncLayer.Presentation.Controllers.RolController",
+    "Method": "GetRoles",
+    "RelativePath": "api/Rol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SyncLayer.Application.DTOs.RolDTO, SyncLayer.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SyncLayer.Presentation.Controllers.RolController",
+    "Method": "CrearRol",
+    "RelativePath": "api/Rol",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SyncLayer.Application.DTOs.RolDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncLayer.Presentation.Controllers.RolController",
+    "Method": "ActualizarRol",
+    "RelativePath": "api/Rol/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SyncLayer.Application.DTOs.RolDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SyncLayer.Presentation.Controllers.TipoPersonaController",
     "Method": "ListarTipoPersona",
     "RelativePath": "api/TipoPersona",
@@ -379,7 +436,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SyncLayer.Application.DTOs.UsuarioDTO, SyncLayer.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SyncLayer.Application.DTOs.UsuarioListadoDTO, SyncLayer.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -425,5 +482,25 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncLayer.Presentation.Controllers.UsuarioController",
+    "Method": "GetUsuariosSinRol",
+    "RelativePath": "api/Usuario/sin-rol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SyncLayer.Application.DTOs.UsuarioDTO, SyncLayer.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

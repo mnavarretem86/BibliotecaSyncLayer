@@ -1,0 +1,10 @@
+# Node / Frontend
+node_modules/
+FrontEnd/**/node_modules/
+
+# Builds
+dist/
+build/
+
+# Logs
+npm-debug.log*

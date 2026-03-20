@@ -1,0 +1,48 @@
+import { useEffect, useState } from "react";
+import { getUsuarios } from "../../api/usuario.api";
+
+export function useUsuarios() {
+
+  const [usuarios, setUsuarios] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const [search, setSearch] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const pageSize = 8;
+
+  const fetchData = async () => {
+    setLoading(true);
+
+    const res = await getUsuarios();
+    setUsuarios(res.data);
+
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const filtered = usuarios.filter(u =>
+    u.nombrePersona?.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const totalPages = Math.ceil(filtered.length / pageSize);
+
+  const paginatedUsuarios = filtered.slice(
+    (currentPage - 1) * pageSize,
+    currentPage * pageSize
+  );
+
+  return {
+    usuarios: paginatedUsuarios,
+    loading,
+    refetch: fetchData,
+    search,
+    setSearch,
+    currentPage,
+    setCurrentPage,
+    totalPages
+  };
+}
